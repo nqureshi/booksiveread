@@ -1,19 +1,21 @@
-<div class="span8">
+<div class="">
   <h3>Title</h3>
   <p><%= @book.title %></p>
 </div>
 
-<div class="span8">
+<div class="">
   <h3>Author</h3>
   <p><%= @book.author %>
 </div>
 
-<div class="span8">
+<div class="">
   <h3>Review</h3>
   <p><%= @book.review %></p>
 </div>
 
-<div class="span4">
+<br>
+
+<div class="">
 <%= link_to "Edit book details", edit_book_path(@book.id), :class => "btn btn-primary" %>
   
 <%= link_to "Delete book", book_path(@book.id), :method => :delete, :confirm => "You sure?", :title => "Delete #{@book.title}", :class => "btn btn-danger" %>
