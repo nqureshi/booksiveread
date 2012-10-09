@@ -1,7 +1,6 @@
 To Do 
 =====
 
-Change styling to be DRY
-Add users model and associate books to owners
-Add signin/signout
-Create a requests system
+Change heading to something decent
+Fix stupid spacing issues in the pages
+Add u/n and password
