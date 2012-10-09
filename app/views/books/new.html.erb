@@ -1,0 +1,19 @@
+<h3>Add a new book to the database</h3>
+
+<%= form_for(@book) do |f| %>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :author %><br />
+    <%= f.text_field :author %><br />
+  </div>
+  <div class="textarea">
+    <%= f.label :review %><br />
+    <%= f.text_area :review, :rows => 10, :class => "span8" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Create book", :class => "btn btn-primary" %>
+  </div>
+<% end %>
