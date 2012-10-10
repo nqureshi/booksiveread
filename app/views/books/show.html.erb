@@ -10,7 +10,7 @@
 
 <div class="">
   <h3>Review</h3>
-  <p><%= @book.review %></p>
+  <p><%= @book.review.gsub(/\n/, '<br />').html_safe %></p>
 </div>
 
 <br>
