@@ -1,7 +1,5 @@
 <p class="lead">
-  <b>Books read in <%= Date.today.year %>: </b><%= books_read_this_year %>
-  <br>
-  <b>Rate: </b><%= books_per_week %> books / week
+  You have read <b><%= books_read_this_year %></b> books in <%= Date.today.year %>. That's a rate of <b><%= books_per_week %></b> per week.
 </p>
 
 <%= link_to "Add New Book", new_book_path, :class => "btn btn-primary" %>
