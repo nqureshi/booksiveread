@@ -9,7 +9,7 @@ class BooksController < ApplicationController
   end
   
   def index
-    @books = Book.all.reverse
+    @books = Book.all
   end
   
   def edit
