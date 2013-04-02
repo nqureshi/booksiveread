@@ -1,12 +1,12 @@
 module BooksHelper
   def books_read_this_year
     @books = Book.all
-    thisyear = []
+    thisyear = 0
     d = Date.today
     @books.each do |b|      
-      thisyear << b if b.created_at.between?(d.beginning_of_year, d+1.day)
+      thisyear += 1 if b.created_at.between?(d.beginning_of_year, d+1.day)
     end
-    thisyear.count  
+    thisyear
   end
   
   def books_per_week
