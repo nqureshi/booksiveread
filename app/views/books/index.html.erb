@@ -14,7 +14,7 @@
   <th>Author</th>
   <th>Created</th>
   
-  <% @books.each_with_index do |book, counter| %>
+  <% @books.reverse.each_with_index do |book, counter| %>
     <tr>
       <td><%= counter + 1 %></td>
       <td><%= link_to book.title, book_path(book.id) %></td>
